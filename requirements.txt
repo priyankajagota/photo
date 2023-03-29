@@ -1,17 +1,10 @@
 
-jupyterlab==2.1.5
-Keras==2.4.3
-Keras-Preprocessing==1.1.2
-notebook==6.0.3
-numpy==1.19.3
-plot-keras-history==1.1.24
-python-editor==1.0.4
-statsmodels==0.12.2
-streamlit>=0.81.1
+streamlit==1.20.0
 MultiApp==1.0
 python==3.11.2
 fer==22.5.0
 tensorflow-gpu\>=1.7.0
 opencv-contrib-python==3.3.0.9
 moviepy 
+pypy==22.5.0
 
