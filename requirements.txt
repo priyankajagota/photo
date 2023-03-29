@@ -128,3 +128,6 @@ zipp
 PIL
 io
 multiapp
+streamlit
+opencv-python
+
