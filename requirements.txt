@@ -1,6 +1,5 @@
-
-
 python==3.11.2
+streamlit
 cv2
 libGL
 fer
@@ -127,3 +126,6 @@ wcwidth
 Werkzeug
 wrapt
 zipp
+PIL
+io
+multiapp
