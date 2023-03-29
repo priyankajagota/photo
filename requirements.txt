@@ -1,3 +1,4 @@
+
 jupyterlab==2.1.5
 Keras==2.4.3
 Keras-Preprocessing==1.1.2
@@ -13,4 +14,4 @@ fer==22.5.0
 tensorflow-gpu\>=1.7.0
 opencv-contrib-python==3.3.0.9
 moviepy 
-pip==23.0.1
+
