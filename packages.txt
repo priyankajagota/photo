@@ -1,2 +1,2 @@
-pip install --user opencv
-pip install --user cv2
+pip install opencv
+pip install cv2
