@@ -1,0 +1,2 @@
+pip install fer
+from fer import FER
