@@ -46,7 +46,7 @@ def page1():
         ### Every picture says some story, lets generate yours....
         """
     )
-    file = st.file_uploader('Please upload an image file', type = ['jpg','png','jpeg'])
+    file = st.file_uploader('Please upload an image file', type = ['jpg','png'])
     if file is None:
       st.write("")
     else:
