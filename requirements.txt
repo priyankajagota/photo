@@ -6,6 +6,5 @@ fer
 moviepy
 pandas
 tensorflow
-protobuf==3.20.1 
 streamlit
-protobuf>=3.20.3
+protobuf>3.20.3
