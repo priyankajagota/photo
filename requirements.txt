@@ -4,6 +4,5 @@ numpy
 opencv-python==4.5.3.56
 fer
 moviepy
-cv2-python==4.5.3.56
 tensorflow
 pandas
