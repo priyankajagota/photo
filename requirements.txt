@@ -1,5 +1,4 @@
 pillow==9.0.0
-numpy==1.22.0
 pybase64==1.2.0
 opencv-python==4.5.3.56
 fer
