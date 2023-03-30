@@ -6,4 +6,5 @@ fer
 moviepy
 tensorflow
 pandas
-streamlib
+streamlit
+
