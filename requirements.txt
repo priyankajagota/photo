@@ -6,5 +6,4 @@ fer
 moviepy
 cv2
 tensorflow
-numpy
 pandas
