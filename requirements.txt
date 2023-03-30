@@ -1,9 +1,6 @@
 streamlit==1.20.0
+python==3.11
 tensorflow
-cv2
-fer
-pillow
-opencv2
 numpy
 pandas
 os
