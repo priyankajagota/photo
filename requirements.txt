@@ -4,3 +4,7 @@ pybase64==1.2.0
 opencv-python==4.5.3.56
 fer
 moviepy
+cv2
+tensorflow
+numpy
+pandas
