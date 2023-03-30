@@ -1,5 +1,5 @@
 streamlit==1.20.0
-python==3.11
+
 tensorflow
 numpy
 pandas
