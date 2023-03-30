@@ -5,4 +5,5 @@ opencv-python==4.5.5.64
 fer
 moviepy
 pandas
+tensorflow
 streamlit
