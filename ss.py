@@ -130,7 +130,7 @@ def Page2():
        main()
          
 def Page3():
-   from Image2Story import image2caption as dblip
+   import image2caption as dblip
    dblip.download_blip()
    dblip.model_download()
    #upload image
@@ -150,5 +150,5 @@ app = MultiApp()
 app.add_app("Welcome Page",Wel)
 app.add_app("Emotions Detector",page1)
 app.add_app("Photo Editor",Page2)
-app.add_app("Photo Editor",Page3)
+app.add_app("Photo Editor2",Page3)
 app.run()  
