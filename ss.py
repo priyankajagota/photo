@@ -12,6 +12,7 @@ from io import BytesIO
 import numpy as np
 import cv2  # computer vision
 from multiapp import MultiApp
+from image2caption import *
 
 def Wel():
    st.markdown('<h1 style="color: black;font-family:cursive;"> Photo Notebook </h1',unsafe_allow_html=True)
@@ -130,21 +131,20 @@ def Page2():
        main()
          
 def Page3():
-   import image2caption as dblip
-   dblip.download_blip()
-   dblip.model_download()
+   download_blip()
+   model_download()
    #upload image
    image_path=st.file_uploader("Upload Images", type=["png", "jpg", "jpeg"])
    from IPython.display import Image
    Image(image_path, width = 600, height = 300)
    #image caption call function
-   caption=dblip.image_caption(image_path)
+   caption=image_caption(image_path)
    caption
    API_KEY='sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
    prompt=caption
-   short_story=dblip.english_story(prompt,API_KEY)
+   short_story=english_story(prompt,API_KEY)
    short_story=short_story.replace('.','\n')
-   print('short story \n',short_story)
+   return short_story
    Image(image_path, width = 600, height = 300)
 app = MultiApp()
 app.add_app("Welcome Page",Wel)
