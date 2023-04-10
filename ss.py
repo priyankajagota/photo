@@ -12,7 +12,8 @@ from io import BytesIO
 import numpy as np
 import cv2  # computer vision
 from multiapp import MultiApp
-from image2caption import *
+import image2caption
+from image2caption import model_download,image_caption,english_story
 
 def Wel():
    st.markdown('<h1 style="color: black;font-family:cursive;"> Photo Notebook </h1',unsafe_allow_html=True)
@@ -131,7 +132,6 @@ def Page2():
        main()
          
 def Page3():
-   download_blip()
    model_download()
    #upload image
    image_path=st.file_uploader("Upload Images", type=["png", "jpg", "jpeg"])
