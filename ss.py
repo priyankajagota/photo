@@ -128,8 +128,27 @@ def Page2():
                     mime="image/png")
     if __name__ == '__main__':
        main()
+         
+def Page3():
+   from Image2Story import image2caption as dblip
+   dblip.download_blip()
+   dblip.model_download()
+   #upload image
+   image_path=st.file_uploader("Upload Images", type=["png", "jpg", "jpeg"])
+   from IPython.display import Image
+   Image(image_path, width = 600, height = 300)
+   #image caption call function
+   caption=dblip.image_caption(image_path)
+   caption
+   API_KEY='sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+   prompt=caption
+   short_story=dblip.english_story(prompt,API_KEY)
+   short_story=short_story.replace('.','\n')
+   print('short story \n',short_story)
+   Image(image_path, width = 600, height = 300)
 app = MultiApp()
 app.add_app("Welcome Page",Wel)
 app.add_app("Emotions Detector",page1)
 app.add_app("Photo Editor",Page2)
+app.add_app("Photo Editor",Page3)
 app.run()  
