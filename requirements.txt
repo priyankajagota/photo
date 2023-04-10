@@ -2,4 +2,14 @@ timm==0.4.12
 transformers==4.15.0
 fairscale==0.4.4
 pycocoevalcap
+pillow==9.0.0
+pybase64==1.2.0
+numpy
+opencv-python==4.5.5.64
 fer
+moviepy
+pandas
+streamlit
+protobuf<3.20,>=3.9.2
+tensorflow==2.10.0
+tensorboard==2.10.1
